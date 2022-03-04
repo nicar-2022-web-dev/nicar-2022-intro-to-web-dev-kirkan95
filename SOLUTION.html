@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- You can edit the title of the page that appears in your browser tab here: -->
+    <title>NICAR 2022 Intro to Web Dev</title>
+    <!-- You can style the contents of your page by putting CSS in the <style> tag below: -->
+    <style>
+      body {
+        max-width: 790px;
+        margin: 20px auto;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      .content {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 45px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 135%;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      .make_it_cheese {
+        background-image: url("media/cheese_background.png");
+        background-position: center center;
+        background-color: #ffa600;
+        background-size: 40px 40px;
+      }
+    </style>
+  </head>
+  <body id="the_cheese">
+    <section class="content">
+      <!-- You can add HTML elements to your page here -->
+      <!-- Step 1: Make a headline for the page -->
+      <h1>Learning HTML is gouda fun!</h1>
+
+      <!--
+        Step 2: Edit the image caption
+        We grabbed the image from: https://commons.wikimedia.org/wiki/File:Picada_cordobesa.jpg
+      -->
+      <figure>
+        <img width="750" src="media/cheese.jpeg" alt="Delicious cheese" />
+        <figcaption>A delicious cheese plate.</figcaption>
+      </figure>
+
+      <!-- Step 3: Add a byline, and make it bold -->
+      <p>
+        <b>By A Cheese Connoisseur</b>
+      </p>
+
+      <!--
+        Step 4: Add some paragraphs.
+        You can grab placeholder text here: http://www.cheeseipsum.co.uk/
+      -->
+      <p>
+        Hard cheese parmesan say cheese. Cauliflower cheese fromage ricotta
+        everyone loves cheese slices cheesy grin feta bavarian bergkase. Blue
+        castello everyone loves gouda feta roquefort rubber cheese red leicester
+        goat. Ricotta cheese triangles emmental hard cheese airedale cheese and
+        wine cheese and biscuits smelly cheese. Fondue monterey jack feta
+        port-salut mozzarella croque monsieur cut the cheese cheddar. When the
+        cheese comes out everybody's happy cut the cheese cheddar monterey jack
+        edam macaroni cheese cut the cheese taleggio. Smelly cheese macaroni
+        cheese red leicester swiss.
+      </p>
+
+      <p>
+        Mascarpone boursin red leicester. Parmesan monterey jack rubber cheese
+        lancashire croque monsieur st. agur blue cheese cheesy grin port-salut.
+        Pepper jack the big cheese cut the cheese croque monsieur queso red
+        leicester gouda ricotta. Edam blue castello cheese triangles monterey
+        jack brie parmesan cheddar cheese on toast. Smelly cheese cheesy grin
+        red leicester gouda blue castello cheese and wine cheddar lancashire.
+        Cheesy grin cheesecake ricotta dolcelatte cauliflower cheese cheese
+        slices feta cheeseburger. Hard cheese fondue airedale cheese and
+        biscuits jarlsberg manchego parmesan macaroni cheese. Gouda mascarpone
+        cheese triangles parmesan ricotta st. agur blue cheese.
+      </p>
+
+      <!-- Step 5: Add a button with an onclick event -->
+      <button onclick="cheese()">Cheese me 🧀</button>
+    </section>
+
+    <script>
+      // Step 6: Add some JavaScript to your page here
+      function cheese() {
+        document.getElementById("the_cheese").classList.add("make_it_cheese");
+      }
+    </script>
+  </body>
+</html>
